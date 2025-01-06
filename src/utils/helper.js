@@ -1,1 +1,79 @@
-function a0_0x3900(_0x38ca26,_0x1cee87){const _0x519dd0=a0_0x519d();return a0_0x3900=function(_0x3900ac,_0x38ce2f){_0x3900ac=_0x3900ac-0x161;let _0x21445a=_0x519dd0[_0x3900ac];return _0x21445a;},a0_0x3900(_0x38ca26,_0x1cee87);}const a0_0x268bf5=a0_0x3900;(function(_0x367ac4,_0x1aab73){const _0xe7ab60=a0_0x3900,_0x527029=_0x367ac4();while(!![]){try{const _0x1ec8e1=parseInt(_0xe7ab60(0x177))/0x1*(parseInt(_0xe7ab60(0x173))/0x2)+-parseInt(_0xe7ab60(0x169))/0x3+-parseInt(_0xe7ab60(0x166))/0x4+-parseInt(_0xe7ab60(0x17b))/0x5*(parseInt(_0xe7ab60(0x161))/0x6)+parseInt(_0xe7ab60(0x178))/0x7*(parseInt(_0xe7ab60(0x165))/0x8)+-parseInt(_0xe7ab60(0x168))/0x9+-parseInt(_0xe7ab60(0x16d))/0xa*(-parseInt(_0xe7ab60(0x176))/0xb);if(_0x1ec8e1===_0x1aab73)break;else _0x527029['push'](_0x527029['shift']());}catch(_0xa1392a){_0x527029['push'](_0x527029['shift']());}}}(a0_0x519d,0xcaed2));function a0_0x519d(){const _0x57e6d9=['Sorry,\x20you\x20cannot\x20use\x20this\x20bot.\x20Please\x20join\x20with\x20the\x20creator\x27s\x20referral\x20code.','floor','showSkelLogo','\x20Hours\x20','7NlhG1','8yrFgXV','Mozilla/5.0\x20(iPhone;\x20CPU\x20iPhone\x20OS\x2017_5_1\x20like\x20Mac\x20OS\x20X)\x20AppleWebKit/605.1.15\x20(KHTML,\x20like\x20Gecko)\x20Version/17.0\x20EdgiOS/125.2535.60\x20Mobile/15E148\x20Safari/605.1.15','Delaying\x20for\x20','25516678IXhvVx','300233gHOUdm','91ashBSD','\x20Seconds','\x20Minutes\x20','4440LpUBZA','refCheck','Mozilla/5.0\x20(iPhone;\x20CPU\x20iPhone\x20OS\x2017_5\x20like\x20Mac\x20OS\x20X)\x20AppleWebKit/605.1.15\x20(KHTML,\x20like\x20Gecko)\x20CriOS/125.0.6422.80\x20Mobile/15E148\x20Safari/604.1','6120OWxZhX','Mozilla/5.0\x20(Linux;\x20Android\x2010;\x20SM-G973F)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/125.0.6422.113\x20Mobile\x20Safari/537.36\x20EdgA/124.0.2478.104','info','Mozilla/5.0\x20(Linux;\x20Android\x2010;\x20VOG-L29)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/125.0.6422.113\x20Mobile\x20Safari/537.36\x20OPR/76.2.4027.73374','285072CKTDOf','2591296IUXDlQ','randomUserAgent','9227331oefwaS','1721529AZepeu','log','Mozilla/5.0\x20(Linux;\x20Android\x2010;\x20Pixel\x203\x20XL)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/125.0.6422.113\x20Mobile\x20Safari/537.36\x20EdgA/124.0.2478.104','msToTime','10HYJNVr'];a0_0x519d=function(){return _0x57e6d9;};return a0_0x519d();}import a0_0x33546a from'./twist.js';export class Helper{static['delay'](_0x5a8a04,_0x28bf86,_0x160526,_0x3b4a7a){return new Promise(async _0x32555b=>{const _0x5db231=a0_0x3900;let _0x304639=_0x5a8a04;_0x28bf86!==undefined?await a0_0x33546a['log'](_0x160526,_0x28bf86,_0x3b4a7a,_0x5db231(0x175)+this[_0x5db231(0x16c)](_0x5a8a04)):a0_0x33546a['info'](_0x5db231(0x175)+this[_0x5db231(0x16c)](_0x5a8a04));const _0x582d4b=setInterval(async()=>{const _0x385c53=_0x5db231;_0x304639-=0x3e8,_0x28bf86!==undefined?await a0_0x33546a[_0x385c53(0x16a)](_0x160526,_0x28bf86,_0x3b4a7a,_0x385c53(0x175)+this['msToTime'](_0x304639)):a0_0x33546a[_0x385c53(0x163)](_0x385c53(0x175)+this[_0x385c53(0x16c)](_0x304639)),_0x304639<=0x0&&(clearInterval(_0x582d4b),_0x32555b());},0x3e8);setTimeout(async()=>{const _0xf9cece=_0x5db231;clearInterval(_0x582d4b),await a0_0x33546a['clearInfo'](),_0x28bf86&&await a0_0x33546a[_0xf9cece(0x16a)](_0x160526,_0x28bf86,_0x3b4a7a),_0x32555b();},_0x5a8a04);});}static[a0_0x268bf5(0x16c)](_0x6fcd81){const _0x596bfa=a0_0x268bf5,_0x385851=Math[_0x596bfa(0x16f)](_0x6fcd81/0x36ee80),_0x3a176d=_0x6fcd81%0x36ee80,_0x2f69dc=Math[_0x596bfa(0x16f)](_0x3a176d/0xea60),_0x1e9f70=_0x3a176d%0xea60,_0x256ffc=Math['round'](_0x1e9f70/0x3e8);return _0x385851+_0x596bfa(0x171)+_0x2f69dc+_0x596bfa(0x17a)+_0x256ffc+_0x596bfa(0x179);}static[a0_0x268bf5(0x17c)](_0x25b8a2){const _0x4f288a=a0_0x268bf5;if(_0x25b8a2!==_0x4f288a(0x172))throw new Error(_0x4f288a(0x16e));}static[a0_0x268bf5(0x167)](){const _0x1625e7=a0_0x268bf5,_0x58ddd6=[_0x1625e7(0x17d),_0x1625e7(0x174),_0x1625e7(0x162),_0x1625e7(0x16b),_0x1625e7(0x164),'Mozilla/5.0\x20(Linux;\x20Android\x2010;\x20SM-N975F)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/125.0.6422.113\x20Mobile\x20Safari/537.36\x20OPR/76.2.4027.73374'];return _0x58ddd6[Math['floor'](Math['random']()*_0x58ddd6['length'])];}static[a0_0x268bf5(0x170)](){console['log']('\x0a\x20\x20\x20\x20\x20\x20█████████\x20\x20\x20█████\x20███████████\x20\x20\x20██████████\x20\x20\x20███████████\x20\x20\x20\x20\x20\x20███████\x20\x20\x20\x20███████████\x20\x20\x20\x20\x20\x20\x20█████████\x20\x20\x20\x20█████████\x20\x20\x20\x20█████████\x0a\x20\x20\x20\x20\x20███░░░░░███\x20░░███\x20░░███░░░░░███\x20░░███░░░░███\x20░░███░░░░░███\x20\x20\x20███░░░░░███\x20░░███░░░░░███\x20\x20\x20\x20\x20███░░░░░███\x20\x20███░░░░░███\x20\x20███░░░░░███\x0a\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20\x20░░███\x20░███\x20\x20\x20\x20░███\x20\x20███\x20\x20\x20\x20\x20░░███\x20░███\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20░███\x20\x20\x20\x20░░░\x20\x20███\x20\x20\x20\x20\x20░░░\x0a\x20\x20\x20\x20░███████████\x20\x20░███\x20\x20░██████████\x20\x20\x20░███\x20\x20\x20\x20░███\x20░██████████\x20\x20░███\x20\x20\x20\x20\x20\x20░███\x20░██████████\x20\x20\x20\x20\x20░███████████\x20░░█████████\x20░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20░███░░░░░███\x20\x20░███\x20\x20░███░░░░░███\x20\x20░███\x20\x20\x20\x20░███\x20░███░░░░░███\x20░███\x20\x20\x20\x20\x20\x20░███\x20░███░░░░░░\x20\x20\x20\x20\x20\x20░███░░░░░███\x20\x20░░░░░░░░███░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20░███\x20\x20\x20\x20░███\x20\x20░███\x20\x20\x20\x20███\x20\x20░███\x20\x20\x20\x20░███\x20░░███\x20\x20\x20\x20\x20███\x20\x20░███\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20░███\x20\x20\x20\x20░███\x20\x20███\x20\x20\x20\x20░███░░███\x20\x20\x20\x20\x20███\x0a\x20\x20\x20\x20█████\x20\x20\x20█████\x20█████\x20█████\x20\x20\x20█████\x20██████████\x20\x20\x20█████\x20\x20\x20█████\x20░░░███████░\x20\x20\x20█████\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20█████\x20\x20\x20█████░░█████████\x20\x20░░█████████\x0a\x20\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20░░░░░\x20░░░░░\x20\x20\x20░░░░░\x20░░░░░░░░░░\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20\x20\x20\x20░░░░░░░\x20\x20\x20\x20░░░░░\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20░░░░░\x20\x20\x20░░░░░\x20\x20░░░░░░░░░\x20\x20\x20\x20░░░░░░░░░\x20\x20\x0a\x20\x20\x20==============================================\x0a\x20\x20\x20\x20\x20\x20\x20BOT\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20:\x20MANGO\x20NETWORK\x0a\x20\x20\x20\x20\x20\x20\x20Telegram\x20Channel\x20:\x20@airdropasc\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20Telegram\x20Group\x20\x20\x20:\x20@autosultan_group\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20==============================================\x0a\x20\x20\x20');}}
+import logger from './twist.js';
+
+export class Helper {
+    static delay(ms, account, message, context) {
+        return new Promise(async (resolve) => {
+            let remainingTime = ms;
+            if (account !== undefined) {
+                await logger.log(message, account, context, 'Delaying for ' + this.msToTime(ms));
+            } else {
+                logger.info('Delaying for ' + this.msToTime(ms));
+            }
+
+            const interval = setInterval(async () => {
+                remainingTime -= 1000;
+                if (account !== undefined) {
+                    await logger.log(message, account, context, 'Delaying for ' + this.msToTime(remainingTime));
+                } else {
+                    logger.info('Delaying for ' + this.msToTime(remainingTime));
+                }
+                if (remainingTime <= 0) {
+                    clearInterval(interval);
+                    resolve();
+                }
+            }, 1000);
+
+            setTimeout(async () => {
+                clearInterval(interval);
+                await logger.clearInfo();
+                if (account) {
+                    await logger.log(message, account, context);
+                }
+                resolve();
+            }, ms);
+        });
+    }
+
+    static msToTime(ms) {
+        const hours = Math.floor(ms / 3600000);
+        const minutes = Math.floor((ms % 3600000) / 60000);
+        const seconds = Math.round((ms % 60000) / 1000);
+        return `${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    }
+
+    static checkReferral(referralCode) {
+        if (referralCode !== 'validReferralCode') {
+            throw new Error('Sorry, you cannot use this bot. Please join with the creator\'s referral code.');
+        }
+    }
+
+    static randomUserAgent() {
+        const userAgents = [
+            'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/125.2535.60 Mobile/15E148 Safari/605.1.15',
+            'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/125.0.6422.80 Mobile/15E148 Safari/604.1',
+            'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36 EdgA/124.0.2478.104',
+            'Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36 OPR/76.2.4027.73374',
+            'Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36 EdgA/124.0.2478.104',
+            'Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36 OPR/76.2.4027.73374'
+        ];
+        return userAgents[Math.floor(Math.random() * userAgents.length)];
+    }
+
+    static showSkelLogo() {
+        console.log(`
+          █████████    █████ ███████████    ██████████    ███████████        ███████    ███████████        █████████    █████████    █████████
+          ███░░░░░███  ░░███ ░░███░░░░░███  ░░███░░░░███  ░░███░░░░░███      ███░░░░░███  ░░███░░░░░███      ███░░░░░███  ███░░░░░███  ███░░░░░███
+          ░███    ░███   ░███  ░███    ░███   ░███    ░░███ ░███    ░███     ░███    ░░███   ░███    ░███     ░███    ░███ ░███    ░░░  ░███    ░░░
+          ░███████████   ░███  ░██████████    ░███     ░███ ░██████████     ░███     ░███   ░██████████      ░███████████ ░░█████████  ░█████████
+          ░███░░░░░███   ░███  ░███░░░░░███   ░███     ░███ ░███░░░░░███    ░███     ░███   ░███░░░░░░       ░███░░░░░███   ░░░░░░░░███ ░░░░░░░░███
+          ░███    ░███   ░███  ░███    ░███   ░███     ███  ░███    ░███    ░███     ░███   ░███             ░███    ░███  ███    ░███  ███    ░███
+          ████████████   █████ █████   █████  ███████████  █████   █████   ████████████ ███████████ ████████████ ███████████ ██████████  ██████████
+          ░░░░░░░░░░░   ░░░░░ ░░░░░   ░░░░░  ░░░░░░░░░░░  ░░░░░   ░░░░░   ░░░░░░░░░░░  ░░░░░░░░░░░ ░░░░░░░░░░░  ░░░░░░░░░░░  ░░░░░░░░░░  ░░░░░░░░░░
+          ================================================================
+          BOT           : MANGO NETWORK
+          Telegram Channel: @airdropasc
+          Telegram Group  : @autosultan_group
+          ================================================================
+        `);
+    }
+}
