@@ -65,7 +65,7 @@ Bot ? Maybe
 
 1. Clone project repo
    ```
-   git clone https://github.com/zamzasalim/mango_network && cd mango_network
+   git clone https://github.com/Awmdan1/mango_network && cd mango_network
    ```
 2. Run
    ```
