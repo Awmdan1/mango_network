@@ -11,10 +11,6 @@ export class CoreService {
         // Implementation for connecting to Mango
     }
 
-    async refCheck(flag) {
-        // Implementation for reference check
-    }
-
     async getFaucet() {
         // Implementation for getting faucet
     }
