@@ -3,64 +3,81 @@ import './src/chain/dest_chain.js';
 import { COINS } from './src/coin/coins.js';
 import { CoreService } from './src/service/core-service.js';
 import { Helper } from './src/utils/helper.js';
-import Logger from './src/utils/logger.js';
+import logger from './src/utils/logger.js';
 
-// Fungsi untuk menjalankan operasi pada satu akun
 async function performAccountOperation(account) {
     const coreService = new CoreService(account);
-
     try {
-        // Langkah-langkah eksekusi akun
         await coreService.connectMango();
+        await coreService.refCheck(true);
+        await coreService.getFaucet();
         await coreService.getMangoUser(true);
-        await coreService.getBalance();
-        await coreService.getAccountInfo();
-
         const user = coreService.user;
-        await Helper.delay(1000, account, `Processing account: ${user.title}`, coreService);
+        await Helper.clear(user.status);
+        await coreService.getSwapTask();
+        await coreService.getExchangeTask();
+        await coreService.getDiscordTask();
 
-        // Operasi tambahan, seperti swap atau task lain
-        if (coreService.swapTask.step.find(step => step.status === '0')) {
+        if (coreService.swapTask.step.find(step => step.status === '0') !== undefined) {
             await coreService.swap(COINS.MAI, COINS.USDT);
             await coreService.exchange(COINS.USDT, COINS.MGO);
+            for (const step of coreService.swapTask.step) {
+                if (step.status === '0') {
+                    await coreService.addStep(coreService.swapTask.ID, step);
+                }
+            }
+            await Helper.delay(2000, account, coreService.swapTask.title + ' Task is now Synchronizing', coreService);
+            await coreService.getMangoUser(true);
         }
-
+        
+        await coreService.getBalance();
+        coreService.exchangeTask.step.find(step => step.status === '0') !== undefined && await coreService.addStep(coreService.exchangeTask.ID, coreService.exchangeTask.step[0]);
         await coreService.getDiscordTask();
-        Logger.info(`Account ${user.title} processed successfully.`);
+
+        if (coreService.discordTask.step.find(step => step.status === '0') !== undefined) {
+            await coreService.swap(COINS.MAI, COINS.USDT);
+            await coreService.exchange(COINS.USDT, COINS.Premium);
+            await coreService.exchange(COINS.Premium, COINS.USDT);
+            for (const step of coreService.exchangeTask.step) {
+                if (step.status === '0') {
+                    await coreService.addStep(coreService.exchangeTask.ID, step);
+                }
+            }
+            await Helper.delay(2000, account, coreService.exchangeTask.title + ' Task is now Synchronizing', coreService);
+            await coreService.getMangoUser(true);
+        }
+        
+        await coreService.exchange(COINS.USDT, COINS.MGO);
+        await Helper.delay(86400000, account, 'Accounts Processing Complete, Delaying For ' + Helper.msToTime(86400000) + ' Task is now Synchronizing', coreService);
     } catch (error) {
-        Logger.error(`Error during bot execution for account: ${account}. Error: ${error.message}`);
-        await Helper.delay(5000, account, `Retrying account due to error: ${error.message}`, coreService);
-        await performAccountOperation(account); // Retry operation
+        logger.error(error.message);
+        await Helper.delay(5000, account, error.message, coreService);
+        performAccountOperation(account);
     }
 }
 
-// Fungsi utama untuk menjalankan bot
 async function startBot() {
     try {
-        Logger.info('BOT STARTED');
-
-        if (accountList.length === 0) {
-            throw new Error('Please input your accounts in the accounts.js file.');
-        }
-
-        const accountPromises = accountList.map(account => performAccountOperation(account));
-        await Promise.all(accountPromises);
-
-        Logger.info('All accounts processed successfully.');
+        logger.info('BOT STARTED');
+        if (accountList.length === 0) throw new Error('Please input your account first in the accounts.ts file');
+        const accountOperations = accountList.map(account => performAccountOperation(account));
+        await Promise.all(accountOperations);
     } catch (error) {
-        Logger.error('BOT STOPPED');
-        Logger.error(`Error: ${error.message}`);
+        logger.error('BOT STOPPED');
+        logger.error(JSON.stringify(error));
         throw error;
     }
 }
 
 (async () => {
     try {
-        Logger.showSkelLogo();
-        Logger.info('Application Started');
+        logger.showSkelLogo();
+        logger.info('');
+        logger.info('Application Started');
+        Helper.connectMango();
         await startBot();
     } catch (error) {
-        console.error('Critical error occurred:', error);
-        await startBot(); // Retry entire bot if critical error occurs
+        console.log('Error during bot execution', error);
+        await startBot();
     }
 })();
