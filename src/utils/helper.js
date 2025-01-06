@@ -81,4 +81,9 @@ export class Helper {
           ================================================================
         `);
     }
+
+    // Tambahkan metode clear jika diperlukan, atau gunakan delay sebagai penggantinya
+    static clear(status) {
+        console.log(`Clearing status: ${status}`);
+    }
 }
