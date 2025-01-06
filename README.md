@@ -85,7 +85,7 @@ Bot ? Maybe
 1. Open your `Command Prompt` or `Power Shell`.
 2. Clone project repo
    ```
-   git clone https://github.com/zamzasalim/mango_network
+   git clone https://github.com/Awmdan1/mango_network
    ```
    and cd to project dir
    ```
