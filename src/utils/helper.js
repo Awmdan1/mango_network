@@ -43,7 +43,7 @@ export class Helper {
         return `${hours} Jam ${minutes} Menit ${seconds} Detik`;
     }
 
-    // Hapus metode checkReferral karena tidak diperlukan
+    // Hapus metode checkReferral karena tidak diperlukan lagi
     // static checkReferral(referralCode) {
     //     if (referralCode !== 'validReferralCode') {
     //         throw new Error('Maaf, Anda tidak dapat menggunakan bot ini. Silakan bergabung dengan kode referral pembuat.');
