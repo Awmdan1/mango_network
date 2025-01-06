@@ -4,7 +4,7 @@ export class CoreService {
             throw new Error('Account must be provided');
         }
         this.account = account;
-        // Initialize other properties and methods as needed
+        this.user = null; // Initialize user property
     }
 
     async connectMango() {
@@ -20,7 +20,11 @@ export class CoreService {
     }
 
     async getMangoUser(flag) {
-        // Implementation for getting Mango user
+        // Mock implementation for getting Mango user
+        // Replace with actual implementation
+        this.user = {
+            status: 'active' // Example user object with a status property
+        };
     }
 
     async getSwapTask() {
