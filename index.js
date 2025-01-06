@@ -15,6 +15,7 @@ async function performAccountOperation(account) {
         await coreService.getMangoUser(true);
         const user = coreService.user;
 
+        // Check if user is defined
         if (!user) {
             throw new Error('User is not defined');
         }
