@@ -1,21 +1,22 @@
-import logger from './twist.js';
+import logger from './twist.js'; // Pastikan ini mengimpor modul logger yang benar
 
 export class Helper {
+    // Metode delay untuk menunda eksekusi
     static delay(ms, account, message, context) {
         return new Promise(async (resolve) => {
             let remainingTime = ms;
             if (account !== undefined) {
-                await logger.log(message, account, context, 'Delaying for ' + this.msToTime(ms));
+                await logger.log(message, account, context, 'Menunggu selama ' + this.msToTime(ms));
             } else {
-                logger.info('Delaying for ' + this.msToTime(ms));
+                logger.info('Menunggu selama ' + this.msToTime(ms));
             }
 
             const interval = setInterval(async () => {
                 remainingTime -= 1000;
                 if (account !== undefined) {
-                    await logger.log(message, account, context, 'Delaying for ' + this.msToTime(remainingTime));
+                    await logger.log(message, account, context, 'Menunggu selama ' + this.msToTime(remainingTime));
                 } else {
-                    logger.info('Delaying for ' + this.msToTime(remainingTime));
+                    logger.info('Menunggu selama ' + this.msToTime(remainingTime));
                 }
                 if (remainingTime <= 0) {
                     clearInterval(interval);
@@ -34,19 +35,22 @@ export class Helper {
         });
     }
 
+    // Metode untuk mengonversi milidetik ke format waktu yang bisa dibaca
     static msToTime(ms) {
         const hours = Math.floor(ms / 3600000);
         const minutes = Math.floor((ms % 3600000) / 60000);
         const seconds = Math.round((ms % 60000) / 1000);
-        return `${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+        return `${hours} Jam ${minutes} Menit ${seconds} Detik`;
     }
 
-    static checkReferral(referralCode) {
-        if (referralCode !== 'validReferralCode') {
-            throw new Error('Sorry, you cannot use this bot. Please join with the creator\'s referral code.');
-        }
-    }
+    // Hapus metode checkReferral karena tidak diperlukan
+    // static checkReferral(referralCode) {
+    //     if (referralCode !== 'validReferralCode') {
+    //         throw new Error('Maaf, Anda tidak dapat menggunakan bot ini. Silakan bergabung dengan kode referral pembuat.');
+    //     }
+    // }
 
+    // Metode untuk mendapatkan User Agent acak
     static randomUserAgent() {
         const userAgents = [
             'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/125.2535.60 Mobile/15E148 Safari/605.1.15',
@@ -59,6 +63,7 @@ export class Helper {
         return userAgents[Math.floor(Math.random() * userAgents.length)];
     }
 
+    // Metode untuk menampilkan logo Skel
     static showSkelLogo() {
         console.log(`
           █████████    █████ ███████████    ██████████    ███████████        ███████    ███████████        █████████    █████████    █████████
